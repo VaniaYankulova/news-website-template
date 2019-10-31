@@ -1,0 +1,66 @@
+/* NEWS-TEMPLATE.PHP PAGE */
+/* IMG */
+main article #img-div {
+  text-align: center;
+  background-color: rgb(235, 235, 235);
+  z-index: 1;
+}
+main article #news-top-img {
+  width: 50%;
+  z-index: 1;
+  height: 50%;
+}
+/* FADEIN IMG */
+main article .fadein-news-top-img {
+  z-index: -1; 
+  position: relative; 
+  left: -300px;
+}
+/* FADEIN IMG */
+/* IMG */
+
+/* H1 AND PULICATION DATE */
+main article h1 {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+}
+main article #pub-date {
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding-bottom: 50px;
+}
+/* FADEIN H1 */
+main article .fadein-top {
+  opacity: 0;
+  position: relative;
+  top: -350px;
+  z-index: -1;
+}
+/* FADEIN H1 */
+/* H1 AND PULICATION DATE */
+
+
+/* INFO IN ARTICLE */
+main article div#info {
+  margin: 0px 200px 80px 200px;
+}
+@media only screen and (max-width: 800px) {
+  main article div#info {
+    margin: 0px 50px 50px 50px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  main article div#info {
+    margin: 0px 10px 50px 10px;
+  }
+}
+main article div#info p {
+  color: rgba(0, 0, 0, 0.7);
+}
+main article div#info p::first-letter {
+  padding-left: 20px;
+}
+/* INFO IN ARTICLE */
+
+/* NEWS-TEMPLATE.PHP PAGE */

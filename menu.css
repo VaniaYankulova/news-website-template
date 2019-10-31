@@ -1,0 +1,70 @@
+/* MENU */
+  /* MENU BIG SCREEN */
+    nav#nav-big-screen {
+      z-index: 3;
+      background-color: rgba(38, 21, 41, 0.9);
+      height: 60px;
+      transition: height 1s, font-size 1s, background-color 1s;
+    }
+    nav#nav-big-screen:hover {
+      background-color: rgba(38, 21, 41, 1);
+      height: 70px;
+      font-size: 18px;
+      transition: height 1s, font-size 1s, background-color 1s;
+    }
+    nav#nav-big-screen .nav-link {
+      margin-left: 20px;
+      position: relative;
+      color: rgb(255, 255, 255);
+    }
+    
+    /* UNDERINE LINK WITH ANIMATION WHEN HOVER  */
+    nav#nav-big-screen .nav-link:after{
+      content: '';
+      position: absolute;
+      width: 0; height: 1px;
+      display: block;
+      margin-top: 5px;
+      right: 0;
+      background: #fff;
+      transition: width .4s ease;
+      -webkit-transition: width .4s ease;
+    }
+    nav#nav-big-screen .nav-link:hover:after{
+      width: 100%;
+      left: 0;
+      background: rgb(255, 255, 255);
+    }
+    nav#nav-big-screen li:first-of-type .nav-link::after {
+      content: none;
+    }
+    /* UNDERINE LINK WITH ANIMATION WHEN HOVER  */
+    
+    nav#nav-big-screen .navbar-brand {
+      position: absolute;
+      right: 10px;
+      top: -3px;
+    }
+  /* MENU BIG SCREEN */
+
+  /* MENU MOBILE */
+    nav#nav-mobile {
+      background-color: rgba(38, 21, 41, 0.9);
+    }
+  /* MENU MOBILE */
+
+  /* WHEN WHICH MENU TO SHOW */
+  /* @media only screen and (min-width: 700px) and (max-width: 1300px) { */
+  @media only screen and (min-width: 970px) {
+    nav#nav-mobile {
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 970px) {
+    nav#nav-big-screen {
+      display: none;
+    }
+  }
+  /* WHEN WHICH MENU TO SHOW */
+
+/* MENU */

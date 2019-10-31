@@ -1,0 +1,237 @@
+/* Slider */
+.slick-slider
+{
+    position: relative;
+
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+
+
+
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .slider {
+        width: 50%;
+        margin: 100px auto;
+    }
+
+    .slick-slide {
+      margin: 0px 20px;
+    }
+
+    .slick-slide img {
+      width: 100%;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: black;
+    }
+
+
+    .slick-slide {
+      transition: all ease-in-out .3s;
+      opacity: .5;
+    }
+    
+    .slick-active {
+      opacity: .5;
+    }
+
+    .slick-current {
+      opacity: 1;
+    }
+    
+    
+    
+    
+    
+    #module8 {
+        position: relative;
+        top: -70px;
+        height: 650px;
+    }
+    #module8 .slider {
+        width: 77% !important;
+        z-index: 2;
+    }
+
+    /* FORMATTING */
+    #module8 .slider div.box {
+        text-align: center;
+        background-color: rgb(240, 248, 255);
+        padding: 30px;
+        border-radius: 50px;
+        cursor: -webkit-grab; 
+        cursor: grab;
+    }
+    #module8 .slider div.box img {
+        border-radius: 100%;
+        border: 5px solid green;
+        width: 100px;
+        display: inline !important;
+    }
+    #module8 .slider div.box .name {
+        font-weight: bold;
+        font-size: 25px;
+        color: green;
+        margin-top: 15px;
+    }
+    #module8 .slider div.box .job {
+        font-style: italic;
+        font-size: 20px;
+        color: rgb(65, 65, 65);
+    }
+    #module8 .slider div.box .comment {
+        font-style: italic;
+        color: rgb(65, 65, 65);
+        width: 250px;
+        margin-top: 15px;
+    }
+    /* FORMATTING */
+
+    /* HEIGHT EVECT WHEN BOX IS ACTIVE */
+    #module8 .slider div.box:active {
+        cursor: -webkit-grabbing; 
+        cursor: grabbing;
+    }
+    .slick-track {
+        height: 480px;
+    }
+    .slick-current .box {
+        animation: height 1.0s forwards;
+        box-shadow: 0px 0px 10px black;
+        margin: 10px;
+    }
+        /* Safari 4.0 - 8.0 */
+    @-webkit-keyframes height {
+        from {height: 400px;}
+        to {height: 450px;}
+    }
+    
+    /* Standard syntax */
+    @keyframes height {
+        from {height: 400px;}
+        to {height: 450px;}
+    }
+    /* HEIGHT EVECT WHEN BOX IS ACTIVE */

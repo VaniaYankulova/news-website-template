@@ -1,0 +1,28 @@
+/* FOOTER */
+  footer {
+    background-color: rgb(38, 21, 41);
+    font-size: 15px;
+    color: rgb(206, 215, 223);
+  }
+  footer .row {
+    padding: 30px;
+    padding-top: 60px;
+    margin: 0px;
+  }
+  footer .row a {
+    margin: 30px;
+    margin-left: 10px;
+    color: rgb(206, 215, 223);
+  }
+  footer .row a#mailto-link {
+    position: relative;
+    bottom: 7px;
+  }
+  
+  footer #copyright-info {
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    /* padding-left: 10%; */
+  }
+/* FOOTER */
+  
